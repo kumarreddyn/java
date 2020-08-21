@@ -11,8 +11,7 @@ public class StreamAPI {
 		
 		List<Employee> employees = EmployeeService.getEmployees();
 		
-		//employees.forEach(System.out::println);
-		
+		//filter
 		employees.stream().filter(e -> e.getAge()>25).forEach(System.out::println);
 	}
 }
